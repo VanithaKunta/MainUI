@@ -20,30 +20,37 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#202020',
+    backgroundColor: '#ffffff',
+
   },
   slide2: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#202020',
+    backgroundColor: '#ffffff',
   },
   slide3: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#202020',
+    backgroundColor: '#ffffff',
   },
   text: {
     color: '#ffff',
     fontSize: 30,
     fontWeight: 'bold',
-    backgroundColor: '#202020',
+    backgroundColor: '#000000',
+    fontFamily:'gotham rounded',
   },
    button: {
     alignItems: 'center',
     backgroundColor: '#202020',
     padding: 10
+  },
+  backgroundImage: {
+    flex: 1,
+    resizeMode: 'stretch', // or 'stretch',
+    //width:500,
   },
 })
  
@@ -62,7 +69,7 @@ export default class Swipers extends Component {
 
       <Swiper style={styles.wrapper} showsButtons={true} index={1} loop={false}>
         <View style={styles.slide1}>
-        <ImageBackground source={require('./bg2.jpg')} style={{width:500,height:null,flex:1}}>
+        <ImageBackground source={require('./bg4.jpg')} style={styles.backgroundImage}>
         <TouchableOpacity
          style={styles.button}
          onPress={this.onPress}>    
@@ -72,7 +79,7 @@ export default class Swipers extends Component {
         </View>
         
         <View style={styles.slide3}>
-        <ImageBackground source={require('./bg2.jpg')} style={{width:500,height:null,flex:1}}>
+        <ImageBackground source={require('./bg4.jpg')} style={{width:500,height:null,flex:1}}>
         <TouchableOpacity
          style={styles.button}
          onPress={this.onPress}>    
@@ -82,7 +89,7 @@ export default class Swipers extends Component {
         </View>
 
         <View style={styles.slide2}>
-        <ImageBackground source={require('./bg2.jpg')} style={{width:500,height:null,flex:1}}>
+        <ImageBackground source={require('./bg4.jpg')} style={{width:500,height:null,flex:1}}>
         <TouchableOpacity
          style={styles.button}
          onPress={this.onPress}>
