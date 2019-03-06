@@ -35,10 +35,10 @@ export default class Swipers extends Component {
     return (
       <Swiper style={styles.wrapper} showsButtons={true}>
         <View style={styles.slide1}>
-          <Text style={styles.text}>Navigation</Text>
+          <Text style={styles.text}>Navigation Mode</Text>
         </View>
         <View style={styles.slide2}>
-          <Text style={styles.text}>Mapping</Text>
+          <Text style={styles.text}>Mapping Mode</Text>
         </View>
       </Swiper>
     );
