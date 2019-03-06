@@ -1,9 +1,15 @@
 import React, { Component } from 'react';
 import {
   AppRegistry,
+  Platform,
   StyleSheet,
   Text,
   View,
+<<<<<<< HEAD
+=======
+  Button,
+  Image,
+>>>>>>> 23b0d1058ebf6a1c0964b250aa698fbd02a3a0fc
   TouchableOpacity,
   ImageBackground
 } from 'react-native';
@@ -20,19 +26,28 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+<<<<<<< HEAD
     backgroundColor: '#ffffff',
 
+=======
+    backgroundColor: '#ffff',
+>>>>>>> 23b0d1058ebf6a1c0964b250aa698fbd02a3a0fc
   },
   slide2: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+<<<<<<< HEAD
     backgroundColor: '#ffffff',
+=======
+    backgroundColor: '#ffff',
+>>>>>>> 23b0d1058ebf6a1c0964b250aa698fbd02a3a0fc
   },
   slide3: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+<<<<<<< HEAD
     backgroundColor: '#ffffff',
   },
   text: {
@@ -51,6 +66,18 @@ const styles = StyleSheet.create({
     flex: 1,
     resizeMode: 'stretch', // or 'stretch',
     //width:500,
+=======
+    backgroundColor: '#ffff',
+  },
+  text: {
+    color: '#ffff',
+    fontSize: 25,
+    fontWeight: 'bold',
+    justifyContent: 'center',
+    alignItems: 'center',
+    textAlign: 'center',
+    backgroundColor: '#202020',
+>>>>>>> 23b0d1058ebf6a1c0964b250aa698fbd02a3a0fc
   },
 })
  
@@ -66,6 +93,7 @@ export default class Swipers extends Component {
   }
   render(){
     return (
+<<<<<<< HEAD
 
       <Swiper style={styles.wrapper} showsButtons={true} index={1} loop={false}>
         <View style={styles.slide1}>
@@ -112,3 +140,21 @@ export default class Swipers extends Component {
 }
  
 //AppRegistry.registerComponent('myproject', () => Swiper);
+=======
+      <Swiper style={styles.wrapper} showsButtons={true} index={1} loop={false}>
+        <View style={styles.slide1}>
+          <Text style={styles.text}>NAVIGATION MODE</Text>  
+        </View>
+        
+        <View style={styles.slide3}>
+          <Text style={styles.text}>TRUST DRIVE</Text> 
+        </View>
+
+        <View style={styles.slide2}>   
+          <Text style={styles.text}>MAPPER MODE</Text>   
+        </View>
+      </Swiper> 
+    );
+  }
+}
+>>>>>>> 23b0d1058ebf6a1c0964b250aa698fbd02a3a0fc
